@@ -1,6 +1,6 @@
 Everything that is not in the "Python37" folder is licensed under MIT as follows with the exception of the "numpy" module which is licensed under the BSD license and the "clr.pyd" module which pythonnet licenses under MIT. 
 
-Pythonnet:
+Pythonnet (clr.pyd and Python.Runtime.dll):
 Copyright (c) 2006-2020 the contributors of the Python.NET project
 
 Anything not mentioned in this file:
