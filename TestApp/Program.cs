@@ -9,7 +9,7 @@ namespace TestApp
         {
             PythonAbstractions Python_Functions = new Py_embedded_v37.PythonAbstractions();
             Python_Functions.RunScript();
-            Python_Functions.RunFunction(ScriptName: "ConfigLib", FuncName: "main");
+            dynamic test = Python_Functions.RunFunction(ScriptName: "ConfigLib", FuncName: "main", Args: new dynamic[] { 10 });
         }
 
     }

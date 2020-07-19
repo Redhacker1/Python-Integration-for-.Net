@@ -44,29 +44,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Python.Runtime.AllPlatforms/3.7.2.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/Python.Runtime.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-x64/lib/netstandard2.0/Python.Runtime.dll": {
-            "assetType": "runtime",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-x64/lib/netstandard2.0/Python.Runtime.dll": {
-            "assetType": "runtime",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-x64/lib/netstandard2.0/Python.Runtime.dll": {
-            "assetType": "runtime",
-            "rid": "win-x64"
-          }
-        }
-      },
       "System.Console/4.3.1": {
         "type": "package",
         "dependencies": {
@@ -375,21 +352,6 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
-      ]
-    },
-    "Python.Runtime.AllPlatforms/3.7.2.4": {
-      "sha512": "mOjsohCZOmyxD02VfSRYt35W9gOMpQ3dBIN0YT8GRlh2uZSRjysYBAgnh1DDlkUUvMJDzabkzYWxXQBHrhrP9g==",
-      "type": "package",
-      "path": "python.runtime.allplatforms/3.7.2.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "python.runtime.allplatforms.3.7.2.4.nupkg.sha512",
-        "python.runtime.allplatforms.nuspec",
-        "ref/netstandard2.0/Python.Runtime.dll",
-        "runtimes/linux-x64/lib/netstandard2.0/Python.Runtime.dll",
-        "runtimes/osx-x64/lib/netstandard2.0/Python.Runtime.dll",
-        "runtimes/win-x64/lib/netstandard2.0/Python.Runtime.dll"
       ]
     },
     "System.Console/4.3.1": {
@@ -855,7 +817,6 @@
     ".NETStandard,Version=v2.0": [
       "Microsoft.CSharp >= 4.7.0",
       "NETStandard.Library >= 2.0.3",
-      "Python.Runtime.AllPlatforms >= 3.7.2.4",
       "System.Console >= 4.3.1",
       "System.IO >= 4.3.0",
       "System.Reflection.Emit >= 4.7.0"
@@ -907,10 +868,6 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
-          },
-          "Python.Runtime.AllPlatforms": {
-            "target": "Package",
-            "version": "[3.7.2.4, )"
           },
           "System.Console": {
             "target": "Package",

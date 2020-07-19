@@ -39,6 +39,7 @@ namespace Py_embedded_v37
             string paths = string.Join("; ", lib);
             Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);
             Initialize();
+            
         }
 
         string FSpath_to_PyPath(string FSPath)
@@ -125,12 +126,13 @@ namespace Py_embedded_v37
 
         }
 
-        public dynamic RunFunction(string ScriptLocation = "Scripts", string ScriptName = "Main.py", string FuncName = "Main", PyObject[] Args = null)
+        public dynamic RunFunction(string ScriptLocation = "Scripts", string ScriptName = "Main.py", string FuncName = "Main", dynamic[] Args = null)
         {
             Initpython(ScriptLocation);
             ScriptLocation = FSpath_to_PyPath(ScriptLocation);
 
             Initpython();
+
 
             dynamic return_value;
             try
@@ -143,7 +145,14 @@ namespace Py_embedded_v37
                 }
                 else
                 {
-                    return_value = Script.InvokeMethod(FuncName, Args);
+                    PyObject[] pyArgs = new PyObject[Args.Length];
+
+                    for (int x = 0; x < Args.Length; x++)
+                    {
+                        pyArgs[x] = (PyObject)Args[x];
+                    }
+
+                    return_value = Script.InvokeMethod(FuncName, pyArgs);
                 }
 
             }

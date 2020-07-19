@@ -29,29 +29,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Python.Runtime.AllPlatforms/3.7.2.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/Python.Runtime.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-x64/lib/netstandard2.0/Python.Runtime.dll": {
-            "assetType": "runtime",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-x64/lib/netstandard2.0/Python.Runtime.dll": {
-            "assetType": "runtime",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-x64/lib/netstandard2.0/Python.Runtime.dll": {
-            "assetType": "runtime",
-            "rid": "win-x64"
-          }
-        }
-      },
       "System.Console/4.3.1": {
         "type": "package",
         "dependencies": {
@@ -124,7 +101,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "Python.Runtime.AllPlatforms": "3.7.2.4",
           "System.Console": "4.3.1",
           "System.IO": "4.3.0",
           "System.Reflection.Emit": "4.7.0"
@@ -236,21 +212,6 @@
         "microsoft.netcore.targets.1.1.2.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
-      ]
-    },
-    "Python.Runtime.AllPlatforms/3.7.2.4": {
-      "sha512": "mOjsohCZOmyxD02VfSRYt35W9gOMpQ3dBIN0YT8GRlh2uZSRjysYBAgnh1DDlkUUvMJDzabkzYWxXQBHrhrP9g==",
-      "type": "package",
-      "path": "python.runtime.allplatforms/3.7.2.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "python.runtime.allplatforms.3.7.2.4.nupkg.sha512",
-        "python.runtime.allplatforms.nuspec",
-        "ref/netstandard2.0/Python.Runtime.dll",
-        "runtimes/linux-x64/lib/netstandard2.0/Python.Runtime.dll",
-        "runtimes/osx-x64/lib/netstandard2.0/Python.Runtime.dll",
-        "runtimes/win-x64/lib/netstandard2.0/Python.Runtime.dll"
       ]
     },
     "System.Console/4.3.1": {
