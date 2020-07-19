@@ -17630,9 +17630,6 @@ C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\ne
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\TestApp.runtimeconfig.dev.json
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\TestApp.dll
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\TestApp.pdb
-C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\runtimes\linux-x64\lib\netstandard2.0\Python.Runtime.dll
-C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\runtimes\osx-x64\lib\netstandard2.0\Python.Runtime.dll
-C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\lib\netstandard2.0\Python.Runtime.dll
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\Py_embedded_v37.dll
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\Py_embedded_v37.pdb
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\obj\Debug\netcoreapp3.1\TestApp.csprojAssemblyReference.cache
@@ -17643,3 +17640,4 @@ C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\obj\Debug\ne
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\obj\Debug\netcoreapp3.1\TestApp.dll
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\obj\Debug\netcoreapp3.1\TestApp.pdb
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\obj\Debug\netcoreapp3.1\TestApp.genruntimeconfig.cache
+C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\TestApp\bin\Debug\netcoreapp3.1\Python.Runtime.dll

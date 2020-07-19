@@ -8892,3 +8892,5 @@ C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\Integration\obj\Debu
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\Integration\obj\Debug\netstandard2.0\Py_embedded_v37.dll
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\Integration\obj\Debug\netstandard2.0\Py_embedded_v37.pdb
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\Integration\obj\Debug\netstandard2.0\Py_embedded_v37.csproj.CoreCompileInputs.cache
+C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\Integration\bin\Debug\netstandard2.0\Python.Runtime.dll
+C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\Integration\obj\Debug\netstandard2.0\Py_embedded_v37.csproj.CopyComplete

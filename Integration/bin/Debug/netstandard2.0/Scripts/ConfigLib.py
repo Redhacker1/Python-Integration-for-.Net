@@ -353,10 +353,11 @@ def End_Brushes(end_file=False, first_write=False):
         return "\n\tsolid\n\t{"
 
 
-def main():
+def main(arg):
     global filename
     print("Starting")
     filename = input(':> ')
+    print(arg)
     print("Initializing Parse")
     world = Parse_File()
     Write_VMF_File(world)
