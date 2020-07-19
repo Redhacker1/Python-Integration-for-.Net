@@ -626,26 +626,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\donov\\.nuget\\packages\\": {}
+    "/home/donovanariesstrawhacker/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj",
+      "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
       "projectName": "TestApp",
-      "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj",
-      "packagesPath": "C:\\Users\\donov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\obj\\",
+      "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
+      "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
+      "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\donov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -680,8 +678,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/obj/project.nuget.cache : After parsing a value an unexpected character was encountered: \". Path 'expectedPackageFiles[8]', line 18, position 4."
+    }
+  ]
 }

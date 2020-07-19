@@ -823,26 +823,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\donov\\.nuget\\packages\\": {}
+    "/home/donovanariesstrawhacker/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\Py_embedded_v37.csproj",
+      "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj",
       "projectName": "Py_embedded_v37",
-      "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\Py_embedded_v37.csproj",
-      "packagesPath": "C:\\Users\\donov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\obj\\",
+      "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj",
+      "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
+      "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\donov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -892,7 +890,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
       }
     }
   }

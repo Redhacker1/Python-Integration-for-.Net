@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj": {}
+    "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj": {}
   },
   "projects": {
     "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj": {
@@ -76,21 +76,19 @@
     "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj",
+        "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
         "projectName": "TestApp",
-        "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj",
-        "packagesPath": "C:\\Users\\donov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\obj\\",
+        "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
+        "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
+        "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\donov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -125,7 +123,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
         }
       }
     }

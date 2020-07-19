@@ -123,3 +123,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.cache
+*.cache
+*.targets
+*.props
+Integration/obj/Debug/netstandard2.0/Py_embedded_v37.csproj.FileListAbsolute.txt
+Integration/obj/Debug/netstandard2.0/Py_embedded_v37.csproj.FileListAbsolute.txt

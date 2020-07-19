@@ -7,8 +7,7 @@ namespace Py_embedded_v37
 {
     public class PythonAbstractions
     {
-
-        public void Initpython(string custom_PATH = "")
+        private void Create_Windows_EnvVariables(string custom_PATH)
         {
             string pathToPython = @"\Python37\Windows";
             string path = pathToPython + ";" +
@@ -38,6 +37,12 @@ namespace Py_embedded_v37
 
             string paths = string.Join("; ", lib);
             Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);
+        }
+
+        public void Initpython(string custom_PATH = "")
+        {
+            Create_Windows_EnvVariables(custom_PATH);
+            Console.WriteLine(Environment.OSVersion);
             Initialize();
             
         }
