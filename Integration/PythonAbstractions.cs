@@ -39,12 +39,49 @@ namespace Py_embedded_v37
             Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);
         }
 
+        private void Create_Linux_EnvVariables(string custom_PATH)
+        {
+            string pathToPython = @"\Python37\Linux\bin";
+            string path = pathToPython + ";" +
+            Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("PATH", path, EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("PYTHONHOME", pathToPython, EnvironmentVariableTarget.Process);
+
+            var lib = new[]
+                {
+                @"\Python37\Linux\lib\python3.7",
+                @"\Python37\Linux\DLLs",
+                @"\Python37\Linux\lib\python3.7\site-packages",
+                @"\Scripts"
+                };
+
+            if (custom_PATH != "")
+            {
+                lib = new[]
+                {
+                @"\Python37\Linux\lib\python3.7",
+                @"\Python37\Linux\DLLs",
+                @"\Python37\Linux\lib\python3.7\site-packages",
+                @"\Scripts",
+                custom_PATH
+                };
+            }
+
+            string paths = string.Join("; ", lib);
+            Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);
+        }
+
+
         public void Initpython(string custom_PATH = "")
         {
-            Create_Windows_EnvVariables(custom_PATH);
             if (Environment.OSVersion.ToString().Contains("Unix"))
             {
                 Console.WriteLine("IsLinux");
+                Create_Linux_EnvVariables(custom_PATH);
+            }
+            else
+            {
+                Create_Windows_EnvVariables(custom_PATH);
             }
             Initialize();
             
