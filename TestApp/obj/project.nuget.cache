@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b8DjdF9MhgmGZO1gECH/MAK/SiISR52coEN5pJ3X7jp4cME0xfVrNy4ZtanFBiE1ImlNf2Vb2NIcwsT2+U0MeA==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj",
+  "dgSpecHash": "C5UgNZfhfR37fW2jEnDSU56MPu8jWB7PYKcQJfCC2+GenixMoI3MsIObCO7dQIae3ifZBO7cimVWhcuGQSUJig==",
+  "success": true,
+  "projectFilePath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python-Integration-for-.Net\\Py_embedded_v37.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python-Integration-for-.Net\\Py_embedded_v37.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }
