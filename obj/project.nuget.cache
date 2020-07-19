@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "0DRWxwTnEgipGhyVJMysrkjkT/Xtymdx7zYI6rvouuuRLhB3T+llIfNufjYuyNIihbdza33LWqgh5GgPEP6crQ==",
+  "dgSpecHash": "11MltY5Ml9R2yGH+Q1HMqdk3DnxLE6SIgFLTokv1hxCpvmi6KVystYwrqez2BKQJAJh7ITL8ZoT7UHwjZxdWpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Py_embedded_v37.csproj",
+  "projectFilePath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Py_embedded_v37.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\donov\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\python.runtime.allplatforms\\3.7.2.4\\python.runtime.allplatforms.3.7.2.4.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\donov\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "/home/donovanariesstrawhacker/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/python.runtime.allplatforms/3.7.2.4/python.runtime.allplatforms.3.7.2.4.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/system.reflection.emit.ilgeneration/4.7.0/system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
+    "/home/donovanariesstrawhacker/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
