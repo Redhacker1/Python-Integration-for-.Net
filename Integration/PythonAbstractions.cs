@@ -8,7 +8,6 @@ namespace Py_embedded_v37
     public class PythonAbstractions
     {
 
-        public PythonEngine Pyengine = new PythonEngine();
         public void Initpython(string custom_PATH = "")
         {
             string pathToPython = @"\Python37";
