@@ -1,6 +1,7 @@
 {
   "version": 2,
   "dgSpecHash": "a7jJjRSHJJ90sLTuWGAsLrKihKtvuv6cY10MLxxHzIxaOBlztfpsnyHkIJeDFxKRoVHnhGsPPWP7pEzLne5ksg==",
+  "dgSpecHash": "LKcY3cycf+ltCilsvmlUPcviDlAt6UcDU3alWVE9HQ/n4CXfXBqKIdjM7LOtfXqCXi/guct+L+Ikxh/Ek/2xqQ==",
   "success": true,
   "projectFilePath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
   "expectedPackageFiles": [
@@ -13,6 +14,16 @@
     "/home/donovanariesstrawhacker/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
     "/home/donovanariesstrawhacker/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/home/donovanariesstrawhacker/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\donov\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\microsoft.netcore.targets\\1.1.2\\microsoft.netcore.targets.1.1.2.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\python.runtime.allplatforms\\3.7.2.4\\python.runtime.allplatforms.3.7.2.4.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\system.console\\4.3.1\\system.console.4.3.1.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\donov\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

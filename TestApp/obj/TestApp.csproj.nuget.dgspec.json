@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj": {}
+    "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj": {}
   },
   "projects": {
     "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj": {
@@ -50,6 +50,10 @@
               "target": "Package",
               "version": "[3.7.2.4, )"
             },
+            "System.Console": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
             "System.IO": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -76,19 +80,21 @@
     "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
+        "projectUniqueName": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj",
         "projectName": "TestApp",
-        "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
-        "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
-        "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/obj/",
+        "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\TestApp.csproj",
+        "packagesPath": "C:\\Users\\donov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\TestApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\donov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -123,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
