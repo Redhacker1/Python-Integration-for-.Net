@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Python-Integration-for-.Net\Py_embedded_v37.csproj" />
+    <ProjectReference Include="..\Integration\Py_embedded_v37.csproj" />
   </ItemGroup>
 
   <ItemGroup>
