@@ -8715,6 +8715,9 @@ C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\bin\Debug\netstandar
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\obj\Debug\netstandard2.0\Py_embedded_v37.csprojAssemblyReference.cache
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\obj\Debug\netstandard2.0\Py_embedded_v37.AssemblyInfoInputs.cache
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\obj\Debug\netstandard2.0\Py_embedded_v37.AssemblyInfo.cs
-C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\obj\Debug\netstandard2.0\Py_embedded_v37.csproj.CoreCompileInputs.cache
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\obj\Debug\netstandard2.0\Py_embedded_v37.dll
 C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\obj\Debug\netstandard2.0\Py_embedded_v37.pdb
+C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\bin\Debug\netstandard2.0\Scripts\__pycache__\ConfigLib.cpython-37.pyc
+C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\bin\Debug\netstandard2.0\Scripts\__pycache__\List_Dict_Array_Library.cpython-37.pyc
+C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\bin\Debug\netstandard2.0\Scripts\__pycache__\TextModificationLib.cpython-37.pyc
+C:\Users\donov\Documents\GitHub\Python-Integration-for-.Net\obj\Debug\netstandard2.0\Py_embedded_v37.csproj.CoreCompileInputs.cache

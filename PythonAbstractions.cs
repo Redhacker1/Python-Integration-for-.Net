@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using static Python.Runtime.PythonEngine;
+using System;
+using System.Reflection;
 using Python.Runtime;
 
 namespace Py_embedded_v37
 {
     public class PythonAbstractions
     {
+
+        public PythonEngine Pyengine = new PythonEngine();
         public void Initpython(string custom_PATH = "")
         {
             string pathToPython = @"\Python37";
@@ -36,7 +39,7 @@ namespace Py_embedded_v37
 
             string paths = string.Join("; ", lib);
             Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);
-            PythonEngine.Initialize();
+            Initialize();
         }
 
         string FSpath_to_PyPath(string FSPath)
@@ -65,7 +68,7 @@ namespace Py_embedded_v37
         {
             try
             {
-                PythonEngine.Shutdown();
+                Shutdown();
             }
             catch (PythonException Exception)
             {
@@ -88,7 +91,7 @@ namespace Py_embedded_v37
 
             try
             {
-                var Script = PythonEngine.ImportModule(ScriptLocation + "." + ScriptName);
+                var Script = ImportModule(ScriptLocation + "." + ScriptName);
                 if (FunctionStart != "")
                 {
                     Script.InvokeMethod(FunctionStart);
@@ -134,7 +137,7 @@ namespace Py_embedded_v37
             try
             {
                 Console.WriteLine("Function Starting");
-                dynamic Script = PythonEngine.ImportModule(ScriptLocation + "." + ScriptName);
+                dynamic Script = ImportModule(ScriptLocation + "." + ScriptName);
                 if (Args == null)
                 {
                     return_value = Script.InvokeMethod(FuncName);
@@ -154,8 +157,5 @@ namespace Py_embedded_v37
             TerminatePython();
             return ToCSharp(return_value);
         }
-
-
-
     }
 }

@@ -11,7 +11,7 @@
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "NETStandard.Library": "2.0.3",
-          "Python.Runtime.NETStandard": "3.7.1",
+          "Python.Runtime.AllPlatforms": "3.7.2.4",
           "System.IO": "4.3.0",
           "System.Reflection.Emit": "4.7.0"
         },
@@ -34,15 +34,9 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "Python.Runtime.NETStandard/3.7.1": {
+      "Python.Runtime.AllPlatforms/3.7.2.4": {
         "dependencies": {
           "System.Reflection.Emit": "4.7.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Python.Runtime.dll": {
-            "assemblyVersion": "3.7.1.0",
-            "fileVersion": "3.7.1.0"
-          }
         }
       },
       "System.IO/4.3.0": {
@@ -129,12 +123,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Python.Runtime.NETStandard/3.7.1": {
+    "Python.Runtime.AllPlatforms/3.7.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uAUk4vII0Xi04T4009mQNsD7ycSssRYLrOEIr0RUKFn+56SFJ8++HIrGAZrZKxrp3SfhMV5LfHcg8vbCvsE/vg==",
-      "path": "python.runtime.netstandard/3.7.1",
-      "hashPath": "python.runtime.netstandard.3.7.1.nupkg.sha512"
+      "sha512": "sha512-mOjsohCZOmyxD02VfSRYt35W9gOMpQ3dBIN0YT8GRlh2uZSRjysYBAgnh1DDlkUUvMJDzabkzYWxXQBHrhrP9g==",
+      "path": "python.runtime.allplatforms/3.7.2.4",
+      "hashPath": "python.runtime.allplatforms.3.7.2.4.nupkg.sha512"
     },
     "System.IO/4.3.0": {
       "type": "package",

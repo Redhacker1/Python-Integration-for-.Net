@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Python.Runtime.NETStandard" Version="3.7.1" />
+    <PackageReference Include="Python.Runtime.AllPlatforms" Version="3.7.2.4" />
     <PackageReference Include="System.IO" Version="4.3.0" />
     <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
   </ItemGroup>
@@ -31,12 +31,6 @@
 
   <ItemGroup>
     <None Remove="Python.Runtime.dll" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Python.Runtime">
-      <HintPath>..\..\..\..\.nuget\packages\python.runtime.unofficialnetstandard\3.0.0-b01\lib\netstandard2.0\Python.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>
