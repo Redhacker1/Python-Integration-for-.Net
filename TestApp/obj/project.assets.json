@@ -626,7 +626,7 @@
     ]
   },
   "packageFolders": {
-    "/home/donovanariesstrawhacker/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -634,11 +634,11 @@
       "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
       "projectName": "TestApp",
       "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
-      "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
+      "packagesPath": "/root/.nuget/packages/",
       "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -681,13 +681,5 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/obj/project.nuget.cache : After parsing a value an unexpected character was encountered: \". Path 'expectedPackageFiles[8]', line 18, position 4."
-    }
-  ]
+  }
 }

@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj",
         "projectName": "Py_embedded_v37",
         "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj",
-        "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -79,11 +79,11 @@
         "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
         "projectName": "TestApp",
         "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/TestApp.csproj",
-        "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/TestApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

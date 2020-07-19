@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/donovanariesstrawhacker/.dotnet/store/|arch|/|tfm|",
-      "/home/donovanariesstrawhacker/.nuget/packages"
+      "/root/.dotnet/store/|arch|/|tfm|",
+      "/root/.nuget/packages"
     ]
   }
 }
