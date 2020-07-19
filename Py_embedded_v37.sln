@@ -4,11 +4,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06055187-E3C1-4541-BE07-6BA7D1E4F514}"
-	ProjectSection(SolutionItems) = preProject
-		Integration\Py_embedded_v37.csproj = Integration\Py_embedded_v37.csproj
-	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Py_embedded_v37", "Integration\Py_embedded_v37.csproj", "{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Debug|x64.ActiveCfg = Debug|x64
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Debug|x64.Build.0 = Debug|x64
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Release|x64.ActiveCfg = Release|x64
+		{67A3B8A8-1E2F-4CCC-B4C1-D5C136BF1979}.Release|x64.Build.0 = Release|x64
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Debug|x64.Build.0 = Debug|Any CPU
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5790BC7-6DE4-40FF-A46E-DD58146E81DA}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

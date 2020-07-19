@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <Reference Include="Python.Runtime">
-      <HintPath>..\Python-Integration-for-.Net\bin\Debug\netstandard2.0\Python.Runtime.dll</HintPath>
+      <HintPath>..\Integration\Python.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
 
