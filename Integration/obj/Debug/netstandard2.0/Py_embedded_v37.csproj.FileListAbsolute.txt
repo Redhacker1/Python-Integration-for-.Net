@@ -168,3 +168,4 @@
 /home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/obj/Debug/netstandard2.0/Py_embedded_v37.csproj.CoreCompileInputs.cache
 /home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/obj/Debug/netstandard2.0/Py_embedded_v37.dll
 /home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/obj/Debug/netstandard2.0/Py_embedded_v37.pdb
+/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/bin/Debug/netstandard2.0/Python37/python3.7m

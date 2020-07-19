@@ -635,8 +635,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\Py_embedded_v37.csproj": {
-              "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\Py_embedded_v37.csproj"
+            "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj": {
+              "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj"
             }
           }
         }
