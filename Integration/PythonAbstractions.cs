@@ -10,7 +10,7 @@ namespace Py_embedded_v37
 
         public void Initpython(string custom_PATH = "")
         {
-            string pathToPython = @"\Python37";
+            string pathToPython = @"\Python37\Windows";
             string path = pathToPython + ";" +
             Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
             Environment.SetEnvironmentVariable("PATH", path, EnvironmentVariableTarget.Process);
@@ -18,9 +18,9 @@ namespace Py_embedded_v37
 
             var lib = new[]
                 {
-                @"\Python37\Lib",
-                @"\Python37\DLLs",
-                @"\Python37\Lib\site-packages",
+                @"\Python37\Windows\Lib",
+                @"\Python37\Windows\DLLs",
+                @"\Python37\Windows\Lib\site-packages",
                 @"\Scripts"
                 };
 
@@ -28,9 +28,9 @@ namespace Py_embedded_v37
             {
                 lib = new[]
                 {
-                @"\Python37\Lib",
-                @"\Python37\DLLs",
-                @"\Python37\Lib\site-packages",
+                @"\Python37\Windows\Lib",
+                @"\Python37\Windows\DLLs",
+                @"\Python37\Windows\Lib\site-packages",
                 @"\Scripts",
                 custom_PATH
                 };
