@@ -30,12 +30,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Python.Runtime.dll" />
+    <None Remove="Libs\Python.Runtime.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Libs\Python.Runtime.dll" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Python.Runtime">
       <HintPath>Python.Runtime.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
 

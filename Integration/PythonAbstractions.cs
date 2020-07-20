@@ -1,12 +1,17 @@
 ﻿using static Python.Runtime.PythonEngine;
+using Python.Runtime;
 using System;
 using System.Reflection;
-using Python.Runtime;
+using System.Linq;
 
 namespace Py_embedded_v37
 {
     public class PythonAbstractions
     {
+        public static Assembly ExecutingAssembly = Assembly.GetExecutingAssembly();
+        public static string[] EmbeddedLibraries = ExecutingAssembly.GetManifestResourceNames().Where(x => x.EndsWith(".dll")).ToArray();
+
+
         private void Create_Windows_EnvVariables(string custom_PATH)
         {
             string pathToPython = @"\Python37\Windows";
@@ -119,6 +124,27 @@ namespace Py_embedded_v37
             return variable.As<dynamic>();
             
         }
+        public void Python_Console()
+        {
+            string pyCode = Console.ReadLine();
+            Initpython();
+
+            // Run Python code
+            try
+            {
+                PyObject result = Eval(pyCode); // null in case of error
+                Console.WriteLine(result);
+            }
+            catch(PythonException Exception_item)
+            {
+                Console.WriteLine(Exception_item.Message);
+            }
+                    
+                    
+                                
+        }
+
+
 
         public string Get_python_type(PyObject variable)
         {
@@ -154,7 +180,9 @@ namespace Py_embedded_v37
 
                     for (int x = 0; x < Args.Length; x++)
                     {
-                        pyArgs[x] = (PyObject)Args[x];
+                        var Argsitem = (object)Args[x];
+                        var item = Argsitem.ToPython();
+                        pyArgs[x] = item;
                     }
 
                     return_value = Script.InvokeMethod(FuncName, pyArgs);
@@ -169,6 +197,30 @@ namespace Py_embedded_v37
             }
             TerminatePython();
             return ToCSharp(return_value);
+        }
+    }
+
+    class DLLIntegrator
+    {
+        public static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            // Get assembly name
+            var assemblyName = new AssemblyName(args.Name).Name + ".dll";
+
+            // Get resource name
+            var resourceName = PythonAbstractions.EmbeddedLibraries.FirstOrDefault(x => x.EndsWith(assemblyName));
+            if (resourceName == null)
+            {
+                return null;
+            }
+
+            // Load assembly from resource
+            using (var stream = PythonAbstractions.ExecutingAssembly.GetManifestResourceStream(resourceName))
+            {
+                var bytes = new byte[stream.Length];
+                stream.Read(bytes, 0, bytes.Length);
+                return Assembly.Load(bytes);
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,12 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Integration\Py_embedded_v37.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Python.Runtime">
-      <HintPath>..\Integration\Python.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
