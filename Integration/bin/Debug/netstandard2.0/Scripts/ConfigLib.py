@@ -358,6 +358,8 @@ def main(arg):
     print("Starting")
     filename = input(':> ')
     print(arg)
+    return False
     print("Initializing Parse")
     world = Parse_File()
     Write_VMF_File(world)
+

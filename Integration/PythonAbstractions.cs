@@ -3,6 +3,8 @@ using Python.Runtime;
 using System;
 using System.Reflection;
 using System.Linq;
+using System.Collections.Generic;
+using System.Runtime;
 
 namespace Py_embedded_v37
 {
@@ -124,27 +126,73 @@ namespace Py_embedded_v37
         public dynamic ToCSharp(PyObject variable)
         {
             Initpython();
-            return variable.As<dynamic>();
-            
+            string Pytype = variable.GetPythonType().ToString();
+            if (Pytype == "<class 'int'>" || Pytype == "<class 'long'>")
+            {
+                if (variable.As<long>() >= int.MaxValue)
+                {
+                    var CSvar = variable.As<long>();
+                    TerminatePython();
+                    return CSvar;
+                }
+                else
+                {
+                    var CSvar = variable.As<int>();
+                    TerminatePython();
+                    return CSvar;
+                }
+                
+            }
+            else if (Pytype == "<class 'short'>")
+            {
+                var CSvar = variable.As<short>();
+                TerminatePython();
+                return CSvar;
+            }
+
+            else if (Pytype == "<class 'str'>")
+            {
+                var CSvar = variable.As<string>();
+                TerminatePython();
+                return CSvar;
+            }
+            else if (Pytype == "<class 'bool'>")
+            {
+                var CSvar = variable.As<bool>();
+                TerminatePython();
+                return CSvar;
+            }
+            else if (Pytype == "<class 'NoneType'>")
+            {
+                TerminatePython();
+                return null;
+            }
+            else if (Pytype == "<class 'list'>")
+            {
+                List<dynamic> list_var = new List<dynamic>();
+                foreach (PyObject item in variable)
+                {
+                    dynamic thing = ToCSharp(item);
+                    list_var.Add(thing);
+                }
+                TerminatePython();
+                return list_var;
+            }
+
+            return null;
         }
-        public void Python_Console()
+
+        public int Python_Console(string[] args)
         {
-            string pyCode = Console.ReadLine();
             Initpython();
 
-            // Run Python code
-            try
-            {
-                PyObject result = Eval(pyCode); // null in case of error
-                Console.WriteLine(result);
-            }
-            catch(PythonException Exception_item)
-            {
-                Console.WriteLine(Exception_item.Message);
-            }
-                    
-                    
-                                
+            string[] cmd = args;
+
+            int i = Runtime.Py_Main(cmd.Length, cmd);
+            TerminatePython();
+
+            return i;
+
         }
 
 
@@ -154,7 +202,6 @@ namespace Py_embedded_v37
             Initpython();
             var type = variable.GetPythonType();
             string stringtype = type.ToString();
-            Console.WriteLine(stringtype);
             TerminatePython();
             return stringtype;
 
@@ -200,30 +247,6 @@ namespace Py_embedded_v37
             }
             TerminatePython();
             return ToCSharp(return_value);
-        }
-    }
-
-    class DLLIntegrator
-    {
-        public static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
-        {
-            // Get assembly name
-            var assemblyName = new AssemblyName(args.Name).Name + ".dll";
-
-            // Get resource name
-            var resourceName = PythonAbstractions.EmbeddedLibraries.FirstOrDefault(x => x.EndsWith(assemblyName));
-            if (resourceName == null)
-            {
-                return null;
-            }
-
-            // Load assembly from resource
-            using (var stream = PythonAbstractions.ExecutingAssembly.GetManifestResourceStream(resourceName))
-            {
-                var bytes = new byte[stream.Length];
-                stream.Read(bytes, 0, bytes.Length);
-                return Assembly.Load(bytes);
-            }
         }
     }
 }
