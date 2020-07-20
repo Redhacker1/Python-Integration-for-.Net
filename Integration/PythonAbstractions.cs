@@ -47,7 +47,10 @@ namespace Py_embedded_v37
         public void Initpython(string custom_PATH = "")
         {
             Create_Windows_EnvVariables(custom_PATH);
-            Console.WriteLine(Environment.OSVersion);
+            if (Environment.OSVersion.ToString().Contains("Unix"))
+            {
+                Console.WriteLine("IsLinux");
+            }
             Initialize();
             
         }
