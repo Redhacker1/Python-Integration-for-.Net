@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\donov\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\donov\\.nuget\\packages"
-    ]
-  }
-}

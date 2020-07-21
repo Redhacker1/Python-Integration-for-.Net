@@ -6,7 +6,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Runtime;
 
-namespace Py_embedded_v37
+namespace Py_embedded
 {
     public class PythonAbstractions
     {
@@ -22,9 +22,9 @@ namespace Py_embedded_v37
 
             var lib = new[]
                 {
-                @"\Python37\Windows\Lib",
-                @"\Python37\Windows\DLLs",
-                @"\Python37\Windows\Lib\site-packages",
+                path + @"\Lib",
+                path + @"\DLLs",
+                path + @"\Lib\site-packages",
                 @"\Scripts"
                 };
 
@@ -32,9 +32,9 @@ namespace Py_embedded_v37
             {
                 lib = new[]
                 {
-                @"\Python37\Windows\Lib",
-                @"\Python37\Windows\DLLs",
-                @"\Python37\Windows\Lib\site-packages",
+                path + @"\Lib",
+                path + @"\DLLs",
+                path + @"\Lib\site-packages",
                 @"\Scripts",
                 custom_PATH
                 };

@@ -31,11 +31,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Libs\Python.Runtime.dll" />
+    <None Remove="Python.Runtime.dll" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Libs\Python.Runtime.dll" />
+    <EmbeddedResource Include="Python.Runtime.dll" />
   </ItemGroup>
 
   <ItemGroup>

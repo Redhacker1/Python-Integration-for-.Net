@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using Py_embedded_v37;
+using Py_embedded;
 
 namespace TestApp
 {
@@ -9,23 +9,23 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            StartFunc();
-            PythonAbstractions Python_Functions = new Py_embedded_v37.PythonAbstractions();
+            DLLIntegrator.StartFunc();
+            PythonAbstractions Python_Functions = new PythonAbstractions();
             Python_Functions.RunScript();
             dynamic test = Python_Functions.RunFunction(ScriptName: "ConfigLib", FuncName: "main", Args: new dynamic[] { "Hello" });
-            Console.WriteLine(test);
             Python_Functions.Python_Console(new string[] { });
-        }
-
-        static private void StartFunc()
-        {
-            AppDomain.CurrentDomain.AssemblyResolve += DLLIntegrator.CurrentDomain_AssemblyResolve;
         }
 
     }
 
     class DLLIntegrator
     {
+
+        static public void StartFunc()
+        {
+            AppDomain.CurrentDomain.AssemblyResolve += DLLIntegrator.CurrentDomain_AssemblyResolve;
+        }
+
         public static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
         {
             // Get assembly name
