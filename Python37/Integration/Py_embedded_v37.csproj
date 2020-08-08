@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Platforms>AnyCPU;x64</Platforms>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>7.0</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,17 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Python.Runtime.dll" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Python.Runtime.dll" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Python.Runtime">
       <HintPath>Python.Runtime.dll</HintPath>
-      <Private>false</Private>
+      <Private>true</Private>
     </Reference>
   </ItemGroup>
 

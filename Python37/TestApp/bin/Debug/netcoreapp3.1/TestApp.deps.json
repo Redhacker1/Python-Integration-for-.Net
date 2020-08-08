@@ -66,6 +66,14 @@
         "runtime": {
           "Py_embedded_v37.dll": {}
         }
+      },
+      "Python.Runtime/3.7.2.0": {
+        "runtime": {
+          "Python.Runtime.dll": {
+            "assemblyVersion": "3.7.2.0",
+            "fileVersion": "3.7.2.0"
+          }
+        }
       }
     }
   },
@@ -140,6 +148,11 @@
     },
     "Py_embedded_v37/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Python.Runtime/3.7.2.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

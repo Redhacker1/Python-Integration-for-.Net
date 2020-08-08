@@ -12,19 +12,23 @@ namespace Py_embedded
     {
         public static Assembly ExecutingAssembly = Assembly.GetExecutingAssembly();
         public static string[] EmbeddedLibraries = ExecutingAssembly.GetManifestResourceNames().Where(x => x.EndsWith(".dll")).ToArray();
-        private void Create_Windows_EnvVariables(string custom_PATH)
+        private void Create_Windows_EnvVariables(string custom_PATH, string Pypath =  "" , bool use_machine_python = true)
         {
-            string pathToPython = @"\Python37\Windows";
-            string path = pathToPython + ";" +
-            Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
+            string pathToPython = Pypath + @"\Python37\Windows";
+            string path = pathToPython + ";";
+            if (use_machine_python)
+            {
+                pathToPython = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Machine).Replace(";", "");
+                //Console.WriteLine(pathToPython);
+            }
             Environment.SetEnvironmentVariable("PATH", path, EnvironmentVariableTarget.Process);
             Environment.SetEnvironmentVariable("PYTHONHOME", pathToPython, EnvironmentVariableTarget.Process);
 
             var lib = new[]
                 {
-                path + @"\Lib",
-                path + @"\DLLs",
-                path + @"\Lib\site-packages",
+                pathToPython + @"\Lib",
+                pathToPython + @"\DLLs",
+                pathToPython + @"\Lib\site-packages",
                 @"\Scripts"
                 };
 
@@ -32,10 +36,10 @@ namespace Py_embedded
             {
                 lib = new[]
                 {
-                path + @"\Lib",
-                path + @"\DLLs",
-                path + @"\Lib\site-packages",
-                @"\Scripts",
+                pathToPython + @"\Lib",
+                pathToPython + @"\DLLs",
+                pathToPython + @"\Lib\site-packages",
+                Pypath + @"\Scripts",
                 custom_PATH
                 };
             }
@@ -44,9 +48,9 @@ namespace Py_embedded
             Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);
         }
 
-        public void Initpython(string custom_PATH = "")
+        public void Initpython(string custom_PATH = "", string Pypath = "", bool use_machine_python = false)
         {
-            Create_Windows_EnvVariables(custom_PATH);
+            Create_Windows_EnvVariables(custom_PATH, Pypath, use_machine_python);
             if (Environment.OSVersion.ToString().Contains("Unix"))
             {
                 Console.WriteLine("IsLinux");
@@ -99,7 +103,7 @@ namespace Py_embedded
             }
             else
             {
-                Initpython();
+                Initpython(use_machine_python: true);
             }
 
             try

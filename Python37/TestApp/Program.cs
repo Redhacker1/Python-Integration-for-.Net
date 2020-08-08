@@ -23,7 +23,7 @@ namespace TestApp
 
         static public void StartFunc()
         {
-            AppDomain.CurrentDomain.AssemblyResolve += DLLIntegrator.CurrentDomain_AssemblyResolve;
+            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
         }
 
         public static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)

@@ -1,31 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj": {}
+    "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj": {
+    "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj",
+        "projectUniqueName": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj",
         "projectName": "Py_embedded_v37",
-        "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj",
-        "packagesPath": "C:\\Users\\donov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\obj\\",
+        "projectPath": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj",
+        "packagesPath": "C:\\Users\\Donovan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\donov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Donovan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netstandard2.1": {
             "projectReferences": {}
           }
         },
@@ -36,7 +36,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netstandard2.1": {
           "dependencies": {
             "Microsoft.CSharp": {
               "target": "Package",
@@ -66,25 +66,25 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj": {
+    "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj",
+        "projectUniqueName": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj",
         "projectName": "TestApp",
-        "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj",
-        "packagesPath": "C:\\Users\\donov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\obj\\",
+        "projectPath": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\TestApp.csproj",
+        "packagesPath": "C:\\Users\\Donovan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\TestApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\donov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Donovan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +97,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj": {
-                "projectPath": "C:\\Users\\donov\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj"
+              "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj": {
+                "projectPath": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Python37\\Integration\\Py_embedded_v37.csproj"
               }
             }
           }
@@ -126,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
