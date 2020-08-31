@@ -678,7 +678,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< Updated upstream:TestApp/obj/project.assets.json
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes:Python37/TestApp/obj/project.assets.json
       }
     }
   }

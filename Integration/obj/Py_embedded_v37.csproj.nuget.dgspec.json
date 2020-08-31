@@ -69,7 +69,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+<<<<<<< Updated upstream:Integration/obj/Py_embedded_v37.csproj.nuget.dgspec.json
           "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+=======
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes:Python37/Integration/obj/Py_embedded_v37.csproj.nuget.dgspec.json
         }
       }
     }

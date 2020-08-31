@@ -1,12 +1,18 @@
 ﻿using static Python.Runtime.PythonEngine;
 using System;
 using System.Reflection;
+<<<<<<< Updated upstream:Integration/PythonAbstractions.cs
 using Python.Runtime;
+=======
+using System.Linq;
+using System.Collections.Generic;
+>>>>>>> Stashed changes:Python37/Integration/PythonAbstractions.cs
 
 namespace Py_embedded_v37
 {
     public class PythonAbstractions
     {
+<<<<<<< Updated upstream:Integration/PythonAbstractions.cs
         private void Create_Windows_EnvVariables(string custom_PATH)
         {
             string pathToPython = @"\Python37\Windows";
@@ -24,6 +30,13 @@ namespace Py_embedded_v37
                 };
 
             if (custom_PATH != "")
+=======
+        private void Create_Windows_EnvVariables(string custom_PATH, string Pypath =  "" , bool use_machine_python = false)
+        {
+            string pathToPython = @"\Python37\Windows";
+            string path = pathToPython;
+            if (use_machine_python)
+>>>>>>> Stashed changes:Python37/Integration/PythonAbstractions.cs
             {
                 lib = new[]
                 {
@@ -69,6 +82,7 @@ namespace Py_embedded_v37
 
             string paths = string.Join("; ", lib);
             Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);
+            Console.WriteLine(pathToPython);
         }
 
 
