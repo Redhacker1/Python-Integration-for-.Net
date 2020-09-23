@@ -1,42 +1,38 @@
 ﻿using static Python.Runtime.PythonEngine;
 using System;
 using System.Reflection;
-<<<<<<< Updated upstream:Integration/PythonAbstractions.cs
 using Python.Runtime;
-=======
 using System.Linq;
 using System.Collections.Generic;
->>>>>>> Stashed changes:Python37/Integration/PythonAbstractions.cs
 
 namespace Py_embedded_v37
 {
     public class PythonAbstractions
     {
-<<<<<<< Updated upstream:Integration/PythonAbstractions.cs
-        private void Create_Windows_EnvVariables(string custom_PATH)
-        {
-            string pathToPython = @"\Python37\Windows";
-            string path = pathToPython + ";" +
-            Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
-            Environment.SetEnvironmentVariable("PATH", path, EnvironmentVariableTarget.Process);
-            Environment.SetEnvironmentVariable("PYTHONHOME", pathToPython, EnvironmentVariableTarget.Process);
-
-            var lib = new[]
-                {
-                @"\Python37\Windows\Lib",
-                @"\Python37\Windows\DLLs",
-                @"\Python37\Windows\Lib\site-packages",
-                @"\Scripts"
-                };
-
-            if (custom_PATH != "")
-=======
-        private void Create_Windows_EnvVariables(string custom_PATH, string Pypath =  "" , bool use_machine_python = false)
+    
+        private void Create_Windows_EnvVariables(string custom_PATH, bool use_machine_python = false)
         {
             string pathToPython = @"\Python37\Windows";
             string path = pathToPython;
+
+            pathToPython = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("PATH", path, EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("PYTHONHOME", pathToPython, EnvironmentVariableTarget.Process);
+
+            string[] lib;
+
             if (use_machine_python)
->>>>>>> Stashed changes:Python37/Integration/PythonAbstractions.cs
+            {
+                lib = new[]
+                {
+                pathToPython + @"\Python37\Windows\Lib",
+                pathToPython + @"\Python37\Windows\DLLs",
+                pathToPython + @"\Python37\Windows\Lib\site-packages",
+                @"\Scripts",
+                custom_PATH
+                };
+            }
+            else
             {
                 lib = new[]
                 {
@@ -47,6 +43,7 @@ namespace Py_embedded_v37
                 custom_PATH
                 };
             }
+
 
             string paths = string.Join("; ", lib);
             Environment.SetEnvironmentVariable("PYTHONPATH", paths, EnvironmentVariableTarget.Process);

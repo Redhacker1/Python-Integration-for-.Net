@@ -751,6 +751,7 @@
       "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -823,25 +824,28 @@
     ]
   },
   "packageFolders": {
-    "/home/donovanariesstrawhacker/.nuget/packages/": {}
+    "C:\\Users\\Donovan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj",
+      "projectUniqueName": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\Py_embedded_v37.csproj",
       "projectName": "Py_embedded_v37",
-      "projectPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/Py_embedded_v37.csproj",
-      "packagesPath": "/home/donovanariesstrawhacker/.nuget/packages/",
-      "outputPath": "/home/donovanariesstrawhacker/Documents/GitHub/Python-Integration-for-.Net/Integration/obj/",
+      "projectPath": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\Py_embedded_v37.csproj",
+      "packagesPath": "C:\\Users\\Donovan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Donovan\\Documents\\GitHub\\Python-Integration-for-.Net\\Integration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/donovanariesstrawhacker/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Donovan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packages.stride3d.net/nuget": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -890,16 +894,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-<<<<<<< Updated upstream:Integration/obj/project.assets.json
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
-=======
-        "frameworkReferences": {
-          "NETStandard.Library": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes:Python37/Integration/obj/project.assets.json
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

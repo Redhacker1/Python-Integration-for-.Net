@@ -1332,7 +1332,7 @@
 /* #undef Py_DEBUG */
 
 /* Defined if Python is built as a shared library. */
-/* #undef Py_ENABLE_SHARED */
+#define Py_ENABLE_SHARED 1
 
 /* Define hash algorithm for str, bytes and memoryview. SipHash24: 1, FNV: 2,
    externally defined: 0 */
